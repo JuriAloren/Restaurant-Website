@@ -1,64 +1,124 @@
-h1{
-   text-align: center;
-   border:2px solid black ;
-   background-color:plum;
-   padding: 3%;
-   color: rgb(124, 84, 143);
+h1 {
+    text-align: center;
+    border: 2px solid rgba(245, 245, 245, 0);
+    border-radius: 5%;
+    background-color: rgba(238, 205, 205, 0.702);
+    padding: 3%;
+    color: rgb(138, 69, 69);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
+
 /*plum*/
-a{
-background-color:rgb(221, 211, 220);
-border: 2px solid whitesmoke;
-border-radius:15% ;
-padding:12px 40px 12px 40px ;
-text-align: center;
-text-decoration:dashed;
-font-size:18px;
-font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-color: rgb(147, 52, 174);
-margin: 2px;
-display: inline-block;
-margin:1px
-
-}
-
-nav{
+a {
+    background-color: rgb(238, 205, 205);
+    border: 2px solid rgba(245, 245, 245, 0);
+    border-radius: 15%;
+    padding: 12px 40px 12px 40px;
     text-align: center;
-}
-/*حركات اذا جاء المؤشر عليهم*/
-a:hover{
-    background-color: plum;
-    color: rgb(130, 73, 130);
-    transition: 0.6s;
-      transform:translate(3px,8px);
-    font-size: 20px;
-}
-/*عشان يكبرالخط اذا المؤشر جاء عليه*/
-h1:hover{
-font-size:35px;
-  transition: 0.6s;
-  
-
-}
-
-body{
-    background-image:url(6045025856645696436.jpg);
-    background-repeat:no-repeat;
-    background-position:center;
-    background-size:1700px;/*backgroundعشان الصوره تغطي كل ال*/
-    text-align: center;
-
-}
-
-.ji{
-    color: rgb(98, 54, 105);
-    background-color: rgba(176, 147, 172, 0.705);
-    display: inline-block;
-    padding: 2%;
-    border-radius:6%;
-}
-p{
+    text-decoration: dashed;
     font-size: 18px;
-    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(138, 69, 69);
+    margin: 2px;
+    display: inline-block;
+    margin: 1px
 }
 
+nav {
+    text-align: center;
+}
+
+/*حركات اذا جاء المؤشر عليهم*/
+a:hover {
+    background-color: rgb(238, 205, 205);
+    color: rgb(255, 0, 0);
+    transition: 0.6s;
+    transform: scale(1.0);
+    font-size: 20px;
+    text-underline-position:below;
+}
+
+/*عشان يكبرالخط اذا المؤشر جاء عليه*/
+h1:hover {
+    font-size: 35px;
+    transition: 0.6s;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+
+}
+
+body {
+    background-color: rgb(239, 226, 223);
+
+}
+
+.ji {
+    color: rgb(138, 69, 69);
+    background-color: rgb(238, 205, 205);
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 8%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+}
+
+
+.offers {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    /* margin-right: auto;*/
+}
+
+.offers-section {
+    text-align: right;
+    margin-right: 50px;
+}
+
+.offers-container {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.offers-container img {
+    width:250px;
+    border-radius: 10%;
+    transition: transform 0.3s ease, box-shadow 0.4s ease;
+    
+}
+
+.offers-container img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+p {
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.jh {
+    text-align: center;
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(238, 205, 205,0.56);
+}
+
+.contact{
+    text-align: center;
+}
+.jj button:hover{
+    background-color: rgb(238, 205, 205);
+    color: rgb(255, 0, 0);
+    transition: 0.9s;
+    font-size: 15px;    
+}
