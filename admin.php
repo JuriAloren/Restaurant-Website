@@ -1,9 +1,8 @@
 <?php
 include 'db.php';
 
-$reservations = getReservations($conn);
-
-$orders = getOrders($conn);
+$الحجوزات = الحجوزات_عرض($conn);
+$الطلبات = الطلبات_عرض($conn);
 ?>
 
 <!DOCTYPE html>
@@ -14,9 +13,7 @@ $orders = getOrders($conn);
 <title>لوحة التحكم - Marina Luxe</title>
 <style>
     body {
-        font-family: Arial, sans-serif;
-        background-color: #f8f8f8;
-        margin: 20px;
+        font-family: 'Tahoma', sans direction: rtl;
     }
     h1 {
         text-align: center;
@@ -37,6 +34,7 @@ $orders = getOrders($conn);
     }
     .status {
         font-weight: bold;
+        color: #4b0082;
     }
 </style>
 </head>
@@ -54,7 +52,7 @@ $orders = getOrders($conn);
         <th>الوقت</th>
         <th>الحالة</th>
     </tr>
-    <?php while($row = $reservations->fetch_assoc()): ?>
+    <?php while($row = $الحجوزات->fetch_assoc()): ?>
     <tr>
         <td><?= htmlspecialchars($row['customer_name']) ?></td>
         <td><?= htmlspecialchars($row['email']) ?></td>
@@ -76,7 +74,7 @@ $orders = getOrders($conn);
         <th>طريقة الدفع</th>
         <th>الحالة</th>
     </tr>
-    <?php while($row = $orders->fetch_assoc()): ?>
+    <?php while($row = $الطلبات->fetch_assoc()): ?>
     <tr>
         <td><?= htmlspecialchars($row['customer_name']) ?></td>
         <td><?= htmlspecialchars($row['email']) ?></td>
