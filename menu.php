@@ -11,21 +11,25 @@
             padding: 0;
         }
         .header {
-            background-color: #ffccd5;
-            text-align: center;
-            padding: 20px 0;
-            font-size: 28px;
-            font-weight: bold;
-            color: #333;
+         text-align: center;
+         border: 2px solid rgba(245, 245, 245, 0);
+         border-radius: 5%;
+         background-color: rgba(238, 205, 205, 0.702);
+         padding: 3%;
+         color: rgb(138, 69, 69);
+         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+         font-size: 40px;
+         margin-top: 20px;
+         margin: bottom: 20px;
         }
         .menu-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            padding: 20px;
+            padding: 37px;
         }
         .item-card {
-            background-color: #ffe6f0;
+            background-color: rgba(238, 205, 205, 0.5);
             border-radius: 10px;
             margin: 10px;
             width: 220px;
@@ -48,10 +52,23 @@
             color: #ff3366;
         }
     </style>
+  
+    <link rel="stylesheet" href="style.css?v=3">
+
 </head>
 <body>
 
-<div class="header">منيو مطعم البرقر</div>
+<h1>منيو مطعم البرقر</h1>
+
+
+<nav>
+    <!--<a href="contact.html">تواصل معنا </a>
+    <a href="order.php">الطلبات</a>
+    <a href="menu.php">قائمة الطعام</a>-->
+    <a href="index.html">الصفحة الرئيسية</a>
+</nav>
+<br>
+<hr color="pink"><hr color="pink">
 
 <div class="menu-container">
     <?php
