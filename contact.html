@@ -8,10 +8,7 @@
 </head>
 <body>
   <header>
-    
     <h1>تواصل معنا </h1>
-
-    
     <nav>
       <!--<a href="contact.html">تواصل معنا </a>
       <a href="order.php">الطلبات</a>
@@ -26,23 +23,32 @@
     <h2> !يسعدنا تواصلك معنا </h2>
     <form id="contactForm">
       <label for="name">: الاسم</label><br>
-      <input type="text" id="name" name="name" required><br><br>
+      <input type="text" id="name" name="name" placeholder="اسمك" required><br><br>
 
       <label for="email">:البريد الإلكتروني</label><br>
-      <input type="email" id="email" name="email" required><br><br>
+      <input type="email" id="email" name="email" placeholder="example@email.com"  required><br><br>
 
       <label for="message">:الرسالة</label><br>
-      <textarea id="message" name="message" rows="4" required></textarea><br><br>
-
+      <textarea id="message" name="message"  placeholder="رسالتك"  rows="4" required></textarea><br><br>
       <div class="jj">
       <button type="submit">💌إرسال الرسالة</button>
       </div>
+      
     </form>
   </section>
   <br><br><br><br><br>
   <footer  class="jh">
     <p>2025 Restaurant</p>
   </footer>
-  <script src="script.js"></script>
+    <script>
+document.addEventListener('submit', e => {
+  if (e.target.matches('form')) {
+    e.preventDefault();
+    alert('تم الإرسال ✅');
+    e.target.reset();
+  }
+});
+</script>
+
 </body>
 </html>
